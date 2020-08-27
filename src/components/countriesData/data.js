@@ -14,7 +14,7 @@ class Data extends React.Component{
     }
    async componentDidMount(){
 
-       let response=await fetch('http://restcountries.eu/rest/v2/all');
+       let response=await fetch('https://restcountries.eu/rest/v2/all');
        let jsonData=await response.json();
        this.tempCountries=jsonData;
        this.setState({
